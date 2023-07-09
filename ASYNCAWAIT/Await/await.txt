@@ -1,0 +1,11 @@
+Async is does nothing without await.
+
+async functions are almost always used with the additional keyword await inside the function body.
+
+The await keyword can only be used inside an async function. await is an operator: 
+it returns the resolved value of a promise. 
+Since promises resolve in an indeterminate amount of time, await halts, or pauses, the execution of our async function until a given promise is resolved.
+
+In most situations, we’re dealing with promises that were returned from functions. 
+Generally, these functions are through a library, and, in this lesson, we’ll be providing them. 
+We can await the resolution of the promise it returns inside an async function.

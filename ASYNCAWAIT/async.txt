@@ -1,0 +1,35 @@
+The async function is used to write functions that handle asynchronous actions .
+
+
+Declarative function wrapped with the async keyword
+async function myFunc() {
+  function body here
+};
+ 
+ Then we invoke this function
+myFunc();
+
+we can also write them as expression functions:
+const myFunc = async () => {
+   Function body here
+};
+ 
+myFunc();
+
+async functions always returns a promise 
+so we can use .then() .catch() with our async functions 
+
+Undefined will be returned if there is nothing in the function like the examples above 
+If there is a non-promise value returned from the function, a promise resolve will be returned to that value 
+if a promise is returned from the function, it will return that promise 
+
+async function fivePromise () {
+  return 5;
+}
+
+fivePromise()
+.then(resolvedValue => {
+  console.log(resolvedValue);
+}) 
+
+the code above will print "5"
