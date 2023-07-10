@@ -15,7 +15,7 @@ const nativePromiseDinner = () => {
 		})
 		// There would be no way to make an error in this tbh, the user is not setting any args
 		.catch((err) => {
-			console.log('im just gonna order takeout!');
+			console.log(err + 'im just gonna order takeout!');
 		});
 };
 // calling the function that returns the promise chain
@@ -28,9 +28,9 @@ async function announceDinner() {
 	setTimeout(() => {
 		console.log(
 			'I used async await to make this thought about my dinner plans:' +
-				` i'm gonna have flippin ${meal} for dinner!`
+				` i'm gonna have flippin' ${meal} for dinner!`
 		);
 	}, 5000);
 }
-
+nativePromiseDinner();
 announceDinner();
