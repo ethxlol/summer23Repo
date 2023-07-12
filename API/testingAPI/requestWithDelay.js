@@ -24,4 +24,4 @@ async function getWords(word) {
 	await printWords(words);
 }
 
-getWords('penis');
+getWords('come');

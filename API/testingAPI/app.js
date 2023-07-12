@@ -18,9 +18,7 @@ async function getWords(word) {
 	// The 'forEach' method executes a provided function once for each array element.
 	// In this case, it's logging each word along with its index in the format 'index. word'.
 	words.forEach((word, index) => {
-		setTimeout(() => {
-			console.log(`${index + 1}. ${word}`);
-		}, 500);
+		console.log(`${index + 1}. ${word}`);
 	});
 
 	// An alternative way to display the list of words would be to join them into a single string with commas and spaces between each word, and then log that string to the console.
@@ -29,4 +27,4 @@ async function getWords(word) {
 }
 
 // Call the 'getWords' function with 'rain' as the argument, which will start the process of making the request to the Datamuse API.
-getWords('rain');
+getWords('renate');
